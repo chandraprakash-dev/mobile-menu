@@ -8,6 +8,10 @@ body {
     width: 100%;
 }
 
+.content {
+    display: none;
+}
+
 footer {
     background-color: aqua;
     height: 120px;
@@ -32,6 +36,16 @@ footer {
 .icon:hover {
     background-color: blue;
 }
+
+.active {
+    background-color: blue;
+}
+
+.show {
+    display: block;
+}
+
+
 /* Styles for dropdown */
 
 .dropdown-content {
