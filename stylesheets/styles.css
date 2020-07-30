@@ -19,7 +19,50 @@ footer {
 }
 
 .icon {
-    background-color: lightcyan;
-    height: 100%;
+    background-color: white;
+    height: 120px;
+    cursor: pointer;
+    overflow: hidden;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    transition: 0.6s ease;
+}
+
+.icon:hover {
+    background-color: blue;
+}
+/* Styles for dropdown */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    bottom: 120px;
+    right: 20px;
+    background-color: #f1f1f1;
     min-width: 150px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content li {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: 5rem;
+    display: block;
+}
+
+.button {
+    display: inline-block;
+    width: auto;
+    cursor: pointer;
+}
+
+.button p {
+    font-size: 5rem;
+}
+
+.show {
+    display: block;
 }
