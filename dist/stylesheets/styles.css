@@ -8,8 +8,36 @@ body {
     width: 100%;
 }
 
+header {
+    height: 120px;
+}
+
 .content {
     display: none;
+}
+
+#slide-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#hamburger-menu-content {
+    width: 70%;
+    height: 100%;
+    background-color: white;
+    position: relative;
+}
+
+#close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transform: rotate(45deg);
+    font-size: 2rem;
+    cursor: pointer;
 }
 
 footer {
@@ -40,11 +68,6 @@ footer {
 .active {
     background-color: blue;
 }
-
-.show {
-    display: block;
-}
-
 
 /* Styles for dropdown */
 

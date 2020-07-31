@@ -1,4 +1,6 @@
 import renderView from './render';
+import './hamburger-menu';
+
 const dropdown = require('dropdown-odin');
 
 const views = document.querySelectorAll('.view');
