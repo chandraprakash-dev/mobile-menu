@@ -93,6 +93,7 @@ footer {
 .button {
     display: inline-block;
     width: auto;
+    text-align: center;
     cursor: pointer;
 }
 
