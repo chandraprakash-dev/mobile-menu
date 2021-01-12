@@ -26,6 +26,14 @@ footer {
     align-items: center;
 }
 
+.icon {
+    height: 100%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 i {
     cursor: pointer;
 }
