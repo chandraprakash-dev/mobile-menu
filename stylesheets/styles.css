@@ -1,0 +1,31 @@
+body {
+    width: 400px;
+    margin: 0 auto;
+}
+
+header {
+    height: 50px;
+    padding: 0 10px;
+    background: dodgerblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+main {
+    height: 500px;
+}
+
+footer {
+    background: dodgerblue;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+i {
+    cursor: pointer;
+}
