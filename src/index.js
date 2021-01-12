@@ -1,13 +1,13 @@
-import renderView from './render';
-import './hamburger-menu';
+import renderView from "./render";
+import "./hamburger-menu";
 
-const dropdown = require('dropdown-odin');
+const dropdown = require("dropdown-odin");
 
-const views = document.querySelectorAll('.view');
-views.forEach(view => view.addEventListener('click', renderView.bind(view, view.id)));
+const views = document.querySelectorAll(".view");
+views.forEach((view) =>
+  view.addEventListener("click", renderView.bind(view, view.id))
+);
 
-const more = document.querySelector('#more');
-const div = dropdown('...', ['one', 'two', 'three']);
+const more = document.querySelector("#more");
+const div = dropdown("...", ["one", "two", "three"]);
 more.appendChild(div);
-
-
