@@ -17,6 +17,10 @@ main {
     height: 500px;
 }
 
+.content {
+    display: none;
+}
+
 footer {
     background: dodgerblue;
     color: white;
