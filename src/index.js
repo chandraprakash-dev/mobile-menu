@@ -1,7 +1,4 @@
 import renderView from "./render";
-import "./hamburger-menu";
 
-const views = document.querySelectorAll(".view");
-views.forEach((view) =>
-  view.addEventListener("click", renderView.bind(view, view.id))
-);
+const views = document.querySelector("footer");
+views.addEventListener("click", renderView);
