@@ -1,43 +1,49 @@
 body {
-    width: 400px;
-    margin: 0 auto;
+  width: 400px;
+  margin: 50px auto;
 }
 
 header {
-    height: 50px;
-    padding: 0 10px;
-    background: dodgerblue;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
+  height: 50px;
+  padding: 0 10px;
+  background: dodgerblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
 }
 
 main {
-    height: 500px;
+  height: 500px;
+  overflow: auto;
+  border: 5px solid dodgerblue;
 }
 
 .content {
-    display: none;
+  display: none;
 }
 
 footer {
-    background: dodgerblue;
-    color: white;
-    height: 50px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  background: dodgerblue;
+  color: white;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .icon {
-    height: 100%;
-    width: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 100%;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 i {
-    cursor: pointer;
+  cursor: pointer;
+}
+
+.show {
+  display: block;
 }

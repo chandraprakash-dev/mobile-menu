@@ -1,19 +1,15 @@
-// const home = document.querySelector("#home");
+let content;
 
 function renderView(event) {
-  // const preViewIcon = document.querySelector(".active");
-  // const preView = document.querySelector(".show");
-  //
-  // if (preViewIcon) {
-  //   if (preViewIcon === this) return;
-  //   preViewIcon.classList.remove("active");
-  //   preView.classList.remove("show");
-  // }
-  //
-  // this.classList.add("active");
-  //
-  // const viewContent = document.querySelector(`#${view}-content`);
-  // viewContent.classList.add("show");
+  const view = event.target.closest("div");
+  if (!view) return;
+
+  if (content) {
+    content.classList.remove("show");
+  }
+
+  content = document.getElementById(`${view.id}-content`);
+  content.classList.add("show");
 }
 
 export default renderView;
