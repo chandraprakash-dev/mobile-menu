@@ -16,7 +16,10 @@ header {
 main {
   height: 500px;
   overflow: auto;
-  border: 5px solid dodgerblue;
+  padding: 20px;
+  text-align: justify;
+  border-left: 5px solid dodgerblue;
+  border-right: 5px solid dodgerblue;
 }
 
 .content {
@@ -38,6 +41,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background-color 0.3s ease-in-out;
 }
 
 i {
@@ -46,4 +50,8 @@ i {
 
 .show {
   display: block;
+}
+
+.highlight {
+  background: darkblue;
 }
