@@ -1,4 +1,5 @@
 let content;
+let view;
 
 function show(view) {
   if (content) {
@@ -10,10 +11,16 @@ function show(view) {
 }
 
 function renderView(event) {
-  const view = event.target.closest("div");
+  if (view) {
+    view.classList.remove("highlight");
+  }
+
+  view = event.target.closest("div");
+
   if (!view) return;
 
+  view.classList.add("highlight");
   show(view);
 }
 
-export { renderView, show };
+export default renderView;
