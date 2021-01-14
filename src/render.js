@@ -1,9 +1,6 @@
 let content;
 
-function renderView(event) {
-  const view = event.target.closest("div");
-  if (!view) return;
-
+function show(view) {
   if (content) {
     content.classList.remove("show");
   }
@@ -12,4 +9,11 @@ function renderView(event) {
   content.classList.add("show");
 }
 
-export default renderView;
+function renderView(event) {
+  const view = event.target.closest("div");
+  if (!view) return;
+
+  show(view);
+}
+
+export { renderView, show };
