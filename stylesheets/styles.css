@@ -81,49 +81,40 @@ i {
   cursor: pointer;
 }
 
-.dropdown-toggle:hover {
-  /*background: #555;*/
-  /*color: whitesmoke;*/
-}
-
-.dropdown-container {
-  background: white;
-  width: 70%;
+.sidenav {
   height: 100%;
+  width: 0;
   position: absolute;
+  z-index: 1;
+  background-color: white;
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
-  margin-bottom: 10px;
-  overflow: hidden;
-  display: none;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
 }
 
-.dropdown-list {
-  background: white;
-  width: 90%;
-  color: blue;
-  font-weight: bold;
-  margin: 100px auto;
-  text-align: center;
-}
-
-#close {
-  transform: rotate(45deg);
-  position: absolute;
-  right: 10px;
-  font-size: 40px;
-  cursor: pointer;
-}
-
-.show {
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
   display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: black;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
 }
 
 .mobile-gray {
   background-color: rgba(0,0,0, 0.7);
-}
-
-li {
-  border-top: 1px solid black;
-  padding: 10px;
 }
