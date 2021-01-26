@@ -1,11 +1,21 @@
 body {
+  background-color: palegreen;
+}
+
+.mobile {
   width: 400px;
   margin: 50px auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
   border-radius: 50px;
 }
 
 header {
   height: 60px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
   padding: 0 10px;
   background: dodgerblue;
   display: flex;
@@ -30,7 +40,13 @@ main {
 footer {
   background: dodgerblue;
   color: white;
-  height: 50px;
+  height: 60px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.footer-container {
+  margin-top: 10px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -54,7 +70,7 @@ i {
 }
 
 .highlight {
-  background: darkblue;
+  color: darkblue;
 }
 
 .dropdown-toggle {
@@ -71,12 +87,14 @@ i {
 
 .dropdown-list {
   background: whitesmoke;
-  width: 100px;
-  height: 100px;
-  list-style: none;
+  width: 50%;
+  height: 100%;
   text-align: center;
-  max-height: 0;
+  position: absolute;
   overflow: hidden;
-  transition: max-height 0.2s ease-out;
+  /*transition: max-height 0.2s ease-out;*/
 }
 
+.hidden {
+  display: none;
+}

@@ -10,12 +10,13 @@ const dropdownToggle = document.querySelector(".dropdown-toggle");
 const dropdownList = document.querySelector(".dropdown-list");
 
 function toggle() {
-  const { maxHeight } = window.getComputedStyle(dropdownList);
-  if (maxHeight === "0px") {
-    dropdownList.style.maxHeight = `${dropdownList.scrollHeight}px`;
-  } else {
-    dropdownList.style.maxHeight = null;
-  }
+  // const { maxHeight } = window.getComputedStyle(dropdownList);
+  // if (maxHeight === "0px") {
+  //   dropdownList.style.height = "100%";
+  // } else {
+  //   dropdownList.style.maxHeight = null;
+  // }
+  dropdownList.classList.remove("hidden");
 }
 
 dropdownToggle.addEventListener("click", toggle);
