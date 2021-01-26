@@ -6,17 +6,14 @@ views.addEventListener("click", renderView);
 const homeView = document.getElementById("home");
 homeView.click();
 
+const close = document.querySelector("#close");
+
 const dropdownToggle = document.querySelector(".dropdown-toggle");
-const dropdownList = document.querySelector(".dropdown-list");
+const dropdownContainer = document.querySelector(".dropdown-container");
 
 function toggle() {
-  // const { maxHeight } = window.getComputedStyle(dropdownList);
-  // if (maxHeight === "0px") {
-  //   dropdownList.style.height = "100%";
-  // } else {
-  //   dropdownList.style.maxHeight = null;
-  // }
-  dropdownList.classList.remove("hidden");
+  dropdownContainer.classList.toggle("show");
 }
 
 dropdownToggle.addEventListener("click", toggle);
+close.addEventListener("click", toggle);

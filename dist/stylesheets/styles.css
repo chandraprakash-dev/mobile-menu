@@ -85,16 +85,33 @@ i {
   /*color: whitesmoke;*/
 }
 
-.dropdown-list {
-  background: whitesmoke;
+.dropdown-container {
+  background: #ffffff;
   width: 50%;
   height: 100%;
-  text-align: center;
   position: absolute;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
   overflow: hidden;
-  /*transition: max-height 0.2s ease-out;*/
-}
-
-.hidden {
   display: none;
 }
+
+.dropdown-list {
+  background: white;
+  width: 90%;
+  margin: 50px auto;
+  text-align: center;
+}
+
+#close {
+  transform: rotate(45deg);
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.show {
+  display: block;
+}
+
