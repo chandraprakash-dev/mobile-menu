@@ -1,5 +1,6 @@
 body {
-  background-color: palegreen;
+  background-color: lightgoldenrodyellow;
+  font-family: "Helvetica Neue", sans-serif;
 }
 
 .mobile {
@@ -8,7 +9,6 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-  background-color: white;
   border-radius: 50px;
 }
 
@@ -28,6 +28,7 @@ main {
   height: 500px;
   overflow: auto;
   padding: 20px;
+  background-color: white;
   text-align: justify;
   border-left: 5px solid dodgerblue;
   border-right: 5px solid dodgerblue;
@@ -86,12 +87,13 @@ i {
 }
 
 .dropdown-container {
-  background: #ffffff;
-  width: 50%;
+  background: white;
+  width: 70%;
   height: 100%;
   position: absolute;
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
+  margin-bottom: 10px;
   overflow: hidden;
   display: none;
 }
@@ -99,15 +101,17 @@ i {
 .dropdown-list {
   background: white;
   width: 90%;
-  margin: 50px auto;
+  color: blue;
+  font-weight: bold;
+  margin: 100px auto;
   text-align: center;
 }
 
 #close {
   transform: rotate(45deg);
   position: absolute;
-  top: 5px;
   right: 10px;
+  font-size: 40px;
   cursor: pointer;
 }
 
@@ -115,3 +119,11 @@ i {
   display: block;
 }
 
+.mobile-gray {
+  background-color: rgba(0,0,0, 0.7);
+}
+
+li {
+  border-top: 1px solid black;
+  padding: 10px;
+}
