@@ -1,6 +1,6 @@
 import renderView from "./render";
 
-const mobile = document.querySelector("main");
+const content = document.querySelector("main");
 
 const views = document.querySelector("footer");
 views.addEventListener("click", renderView);
@@ -8,15 +8,18 @@ views.addEventListener("click", renderView);
 const homeView = document.getElementById("home");
 homeView.click();
 
-const close = document.querySelector("#close");
+const close = document.querySelector(".closebtn");
+const navToggle = document.querySelector(".nav-toggle");
 
-const dropdownToggle = document.querySelector(".dropdown-toggle");
-const dropdownContainer = document.querySelector(".dropdown-container");
-
-function toggle() {
-  dropdownContainer.classList.toggle("show");
-  mobile.classList.toggle("mobile-gray");
+function openNav() {
+  document.querySelector(".sidenav").style.width = "250px";
+  content.classList.add("mobile-gray");
 }
 
-dropdownToggle.addEventListener("click", toggle);
-close.addEventListener("click", toggle);
+function closeNav() {
+  document.querySelector(".sidenav").style.width = "0";
+  content.classList.remove("mobile-gray");
+}
+
+navToggle.addEventListener("click", openNav);
+close.addEventListener("click", closeNav);
